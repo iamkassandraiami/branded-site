@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Branded. — Custom AI Agents Built for You</title>
+    <meta name="title" content="Branded. — Custom AI Agents Built for You">
+    <meta name="description" content="Private AI that runs locally on your machine. Custom-built for your business in 72 hours. Integrated with your tools. Owned forever.">
+    <meta name="keywords" content="custom AI agent, local AI, private AI, AI automation, business AI, AI assistant, secure AI, AI development">
+    <meta name="author" content="Branded.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://brandedjustlikethat.com">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://brandedjustlikethat.com">
+    <meta property="og:title" content="Branded. — Custom AI Agents Built for You">
+    <meta property="og:description" content="Private AI that runs locally on your machine. Custom-built for your business in 72 hours. Owned forever.">
+    <meta property="og:image" content="https://brandedjustlikethat.com/og-image.png">
+    <meta property="og:site_name" content="Branded.">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://brandedjustlikethat.com">
+    <meta name="twitter:title" content="Branded. — Custom AI Agents Built for You">
+    <meta name="twitter:description" content="Private AI that runs locally on your machine. Custom-built for your business in 72 hours. Owned forever.">
+    <meta name="twitter:image" content="https://brandedjustlikethat.com/og-image.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Custom AI Agent",
+        "description": "Private AI agent custom-built for your business. Runs locally, integrates with your tools, owned forever.",
+        "brand": {
+            "@type": "Brand",
+            "name": "Branded."
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "5000",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+        }
+    }
+    </script>
+    
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --obsidian: #0A0A0B;
+            --graphite: #18181B;
+            --slate: #27272A;
+            --smoke: #71717A;
+            --mist: #A1A1AA;
+            --pearl: #FAFAFA;
+            --amethyst: #8B5CF6;
+            --amethyst-dark: #7C3AED;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--obsidian);
+            color: var(--pearl);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        
+        section {
+            padding: 96px 0;
+        }
+        
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 20px 0;
+            background: rgba(10, 10, 11, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(39, 39, 42, 0.5);
+        }
+        
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 900;
+            letter-spacing: -0.02em;
+            color: var(--pearl);
+            text-decoration: none;
+        }
+        
+        .nav-cta {
+            background: var(--pearl);
+            color: var(--obsidian);
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            transition: all 200ms ease;
+        }
+        
+        .nav-cta:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(250, 250, 250, 0.2);
+        }
+        
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+        }
+        
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--graphite);
+            border: 1px solid var(--slate);
+            padding: 8px 16px;
+            border-radius: 100px;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--mist);
+            margin-bottom: 32px;
+        }
+        
+        .hero-badge .dot {
+            width: 8px;
+            height: 8px;
+            background: #22C55E;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        h1 {
+            font-size: clamp(40px, 8vw, 72px);
+            font-weight: 900;
+            line-height: 1.0;
+            letter-spacing: -0.03em;
+            margin-bottom: 24px;
+        }
+        
+        h1 .highlight {
+            background: linear-gradient(135deg, var(--amethyst) 0%, #6366F1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-sub {
+            font-size: clamp(18px, 2.5vw, 22px);
+            color: var(--mist);
+            max-width: 600px;
+            margin-bottom: 48px;
+            line-height: 1.5;
+        }
+        
+        .hero-ctas {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, var(--amethyst) 0%, var(--amethyst-dark) 100%);
+            color: white;
+            padding: 18px 36px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            text-decoration: none;
+            transition: all 200ms ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(139, 92, 246, 0.4);
+        }
+        
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: transparent;
+            color: var(--pearl);
+            padding: 18px 36px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            text-decoration: none;
+            border: 1px solid var(--slate);
+            transition: all 200ms ease;
+        }
+        
+        .btn-secondary:hover {
+            background: var(--graphite);
+            border-color: var(--smoke);
+        }
+        
+        /* Trust Bar */
+        .trust-bar {
+            padding: 48px 0;
+            border-top: 1px solid var(--slate);
+            border-bottom: 1px solid var(--slate);
+        }
+        
+        .trust-items {
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+            flex-wrap: wrap;
+        }
+        
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--smoke);
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .trust-item svg {
+            width: 20px;
+            height: 20px;
+            color: var(--amethyst);
+        }
+        
+        /* Features */
+        .features {
+            background: var(--obsidian);
+        }
+        
+        .section-label {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--amethyst);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 16px;
+        }
+        
+        h2 {
+            font-size: clamp(32px, 5vw, 48px);
+            font-weight: 700;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            margin-bottom: 24px;
+        }
+        
+        .section-intro {
+            font-size: 18px;
+            color: var(--mist);
+            max-width: 600px;
+            margin-bottom: 64px;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+        
+        .feature-card {
+            background: var(--graphite);
+            border: 1px solid var(--slate);
+            border-radius: 16px;
+            padding: 32px;
+            transition: all 300ms ease;
+        }
+        
+        .feature-card:hover {
+            border-color: var(--amethyst);
+            transform: translateY(-4px);
+        }
+        
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.2) 0%, rgba(99, 102, 241, 0.2) 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .feature-icon svg {
+            width: 24px;
+            height: 24px;
+            color: var(--amethyst);
+        }
+        
+        .feature-card h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        
+        .feature-card p {
+            color: var(--mist);
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        
+        /* How It Works */
+        .how-it-works {
+            background: var(--graphite);
+        }
+        
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+            margin-top: 64px;
+        }
+        
+        .step {
+            position: relative;
+        }
+        
+        .step-number {
+            font-size: 64px;
+            font-weight: 900;
+            color: var(--slate);
+            line-height: 1;
+            margin-bottom: 16px;
+        }
+        
+        .step h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        
+        .step p {
+            color: var(--mist);
+            font-size: 16px;
+        }
+        
+        /* Pricing */
+        .pricing {
+            text-align: center;
+        }
+        
+        .price-card {
+            max-width: 560px;
+            margin: 0 auto;
+            background: var(--graphite);
+            border: 1px solid var(--slate);
+            border-radius: 24px;
+            padding: 48px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .price-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--amethyst), #6366F1, #3B82F6);
+        }
+        
+        .price-amount {
+            font-size: 64px;
+            font-weight: 900;
+            letter-spacing: -0.03em;
+            margin-bottom: 8px;
+        }
+        
+        .price-term {
+            color: var(--smoke);
+            font-size: 16px;
+            margin-bottom: 32px;
+        }
+        
+        .price-features {
+            text-align: left;
+            margin-bottom: 32px;
+        }
+        
+        .price-feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--slate);
+        }
+        
+        .price-feature:last-child {
+            border-bottom: none;
+        }
+        
+        .price-feature svg {
+            width: 20px;
+            height: 20px;
+            color: #22C55E;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        
+        .price-feature span {
+            font-size: 15px;
+            color: var(--mist);
+        }
+        
+        .price-cta {
+            width: 100%;
+            justify-content: center;
+        }
+        
+        .guarantee {
+            margin-top: 24px;
+            font-size: 14px;
+            color: var(--smoke);
+        }
+        
+        /* Demo Section */
+        .demo-section {
+            background: linear-gradient(180deg, var(--obsidian) 0%, var(--graphite) 100%);
+            text-align: center;
+        }
+        
+        .demo-card {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--obsidian);
+            border: 1px solid var(--slate);
+            border-radius: 20px;
+            padding: 48px;
+        }
+        
+        .demo-card h3 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        
+        .demo-card p {
+            color: var(--mist);
+            margin-bottom: 32px;
+        }
+        
+        .demo-form {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        
+        .demo-form input {
+            flex: 1;
+            min-width: 200px;
+            padding: 16px 20px;
+            background: var(--graphite);
+            border: 1px solid var(--slate);
+            border-radius: 8px;
+            color: var(--pearl);
+            font-size: 16px;
+            outline: none;
+            transition: border-color 200ms ease;
+        }
+        
+        .demo-form input::placeholder {
+            color: var(--smoke);
+        }
+        
+        .demo-form input:focus {
+            border-color: var(--amethyst);
+        }
+        
+        .demo-form button {
+            padding: 16px 32px;
+            white-space: nowrap;
+        }
+        
+        .demo-note {
+            margin-top: 16px;
+            font-size: 13px;
+            color: var(--smoke);
+        }
+        
+        /* FAQ */
+        .faq {
+            background: var(--obsidian);
+        }
+        
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 24px;
+            margin-top: 64px;
+        }
+        
+        @media (max-width: 480px) {
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .faq-item {
+            padding: 24px;
+            background: var(--graphite);
+            border: 1px solid var(--slate);
+            border-radius: 12px;
+        }
+        
+        .faq-item h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        
+        .faq-item p {
+            color: var(--mist);
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        
+        /* Final CTA */
+        .final-cta {
+            text-align: center;
+            background: linear-gradient(180deg, var(--graphite) 0%, var(--obsidian) 100%);
+            padding: 120px 0;
+        }
+        
+        .final-cta h2 {
+            margin-bottom: 16px;
+        }
+        
+        .final-cta p {
+            color: var(--mist);
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        
+        /* Footer */
+        footer {
+            padding: 48px 0;
+            border-top: 1px solid var(--slate);
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+        
+        .footer-links {
+            display: flex;
+            gap: 32px;
+        }
+        
+        .footer-links a {
+            color: var(--smoke);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 200ms ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--pearl);
+        }
+        
+        .footer-copy {
+            color: var(--smoke);
+            font-size: 14px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            section {
+                padding: 64px 0;
+            }
+            
+            .hero {
+                padding-top: 100px;
+            }
+            
+            .hero-ctas {
+                flex-direction: column;
+            }
+            
+            .btn-primary, .btn-secondary {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .trust-items {
+                gap: 24px;
+            }
+            
+            .price-card {
+                padding: 32px 24px;
+            }
+            
+            .demo-form {
+                flex-direction: column;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="/" class="logo">Branded.</a>
+            <a href="#pricing" class="nav-cta">Get Started</a>
+        </div>
+    </nav>
+    
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="dot"></span>
+                    Now accepting new clients
+                </div>
+                <h1>
+                    Your AI.<br>
+                    <span class="highlight">Your Rules.</span>
+                </h1>
+                <p class="hero-sub">
+                    Custom AI that runs on your machine. Built around your business. 
+                    Integrated with your tools. Delivered in 72 hours. Owned forever.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#pricing" class="btn-primary">
+                        Get Your Agent
+                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="#demo" class="btn-secondary">
+                        Join Waitlist for Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Trust Bar -->
+    <div class="trust-bar">
+        <div class="container">
+            <div class="trust-items">
+                <div class="trust-item">
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                    100% Local & Private
+                </div>
+                <div class="trust-item">
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    72-Hour Delivery
+                </div>
+                <div class="trust-item">
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                    Your Data Never Leaves
+                </div>
+                <div class="trust-item">
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                    Own Forever
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Features -->
+    <section class="features" id="features">
+        <div class="container">
+            <p class="section-label">What You Get</p>
+            <h2>Intelligence that actually<br>knows your business</h2>
+            <p class="section-intro">
+                Not another generic chatbot. An AI built from the ground up around how you work.
+            </p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                    </div>
+                    <h3>Runs Locally</h3>
+                    <p>Your AI lives on your machine. Your data never touches external servers. Complete privacy by design.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/></svg>
+                    </div>
+                    <h3>Persistent Memory</h3>
+                    <p>Remembers context across sessions. Learns your preferences. Gets better the more you use it.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                    </div>
+                    <h3>Your Business Logic</h3>
+                    <p>Embed your processes, frameworks, and decision trees. It thinks like you because we build it that way.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/></svg>
+                    </div>
+                    <h3>Your Data, Built In</h3>
+                    <p>Upload documents, databases, or connect your existing files. Your agent knows what you know.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
+                    </div>
+                    <h3>Tool Integration</h3>
+                    <p>Connect to your existing software, APIs, and platforms. Works with what you already use.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3>One-Time Investment</h3>
+                    <p>No subscriptions. No per-seat pricing. No surprise fees. Pay once, own forever.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- How It Works -->
+    <section class="how-it-works" id="how">
+        <div class="container">
+            <p class="section-label">How It Works</p>
+            <h2>From order to ownership<br>in 72 hours</h2>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <h3>Tell Us About You</h3>
+                    <p>Share your business, workflow, and what you need. Upload any relevant files or data you want built in.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <h3>We Build It</h3>
+                    <p>Our team crafts your custom agent with your logic, voice, and integrations. Ready in 72 hours.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <h3>You Own It</h3>
+                    <p>Receive your agent with full setup. Runs locally on your machine. Two refinement rounds included.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <p class="section-label">Investment</p>
+            <h2>One agent. One price. Forever.</h2>
+            
+            <div class="price-card">
+                <div class="price-amount">$5,000</div>
+                <div class="price-term">One-time investment · No subscriptions</div>
+                
+                <div class="price-features">
+                    <div class="price-feature">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+                        <span>Custom AI agent built to your exact specifications</span>
+                    </div>
+                    <div class="price-feature">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+                        <span>Runs 100% locally — your data stays private</span>
+                    </div>
+                    <div class="price-feature">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+                        <span>Persistent memory & your business logic built in</span>
+                    </div>
+                    <div class="price-feature">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+                        <span>Integration with your existing tools & platforms</span>
+                    </div>
+                    <div class="price-feature">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+                        <span>72-hour delivery with complete setup</span>
+                    </div>
+                    <div class="price-feature">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+                        <span>Two refinement rounds included</span>
+                    </div>
+                    <div class="price-feature">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+                        <span>Full ownership — no ongoing fees, ever</span>
+                    </div>
+                </div>
+                
+                <a href="#checkout" class="btn-primary price-cta" id="checkout-btn">
+                    Get Started Now
+                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                
+                <p class="guarantee">Questions? Contact hello@brandedjustlikethat.com</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Demo Waitlist -->
+    <section class="demo-section" id="demo">
+        <div class="container">
+            <div class="demo-card">
+                <h3>See It In Action</h3>
+                <p>Join the waitlist for a personalized demo of what your custom agent could do.</p>
+                
+                <form class="demo-form" id="waitlist-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn-primary">Join Waitlist</button>
+                </form>
+                
+                <p class="demo-note">No spam. We'll reach out when demo slots open.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <p class="section-label">Questions</p>
+            <h2>Everything you need to know</h2>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>How private is it really?</h4>
+                    <p>Completely. Your agent runs on your local machine. No data is sent to external servers. We can't access it even if we wanted to.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>What if I need changes later?</h4>
+                    <p>Two refinement rounds are included. After that, additional modifications are available — we'll quote based on scope.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>What tech do I need?</h4>
+                    <p>A modern computer (Mac, Windows, or Linux). We handle all the technical setup and walk you through everything.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Can I use it for my business?</h4>
+                    <p>Absolutely. It's yours. Use it however you want — internally, with clients, for products. No restrictions.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>What integrations are possible?</h4>
+                    <p>Most tools with APIs — Notion, Slack, email, CRMs, databases, and more. Tell us what you use and we'll make it work.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Why $5,000?</h4>
+                    <p>You're getting custom development that agencies charge $50K+ for, delivered in 72 hours. And you own it forever instead of renting it monthly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Ready to own your AI?</h2>
+            <p>Stop renting. Start owning. 72 hours from now, you could have an AI that actually knows your business.</p>
+            <a href="#pricing" class="btn-primary">
+                Get Your Agent
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <a href="/" class="logo">Branded.</a>
+                <div class="footer-links">
+                    <a href="/terms">Terms</a>
+                    <a href="/privacy">Privacy</a>
+                    <a href="mailto:hello@brandedjustlikethat.com">Contact</a>
+                </div>
+                <p class="footer-copy">© 2026 Branded. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Stripe Integration Script -->
+    <script>
+        // Checkout button - redirect to Stripe
+        document.getElementById('checkout-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            // Replace with your Stripe Payment Link
+            window.location.href = 'STRIPE_PAYMENT_LINK_HERE';
+        });
+        
+        // Waitlist form
+        document.getElementById('waitlist-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input').value;
+            const button = this.querySelector('button');
+            const originalText = button.innerHTML;
+            
+            button.innerHTML = 'Joining...';
+            button.disabled = true;
+            
+            // Send to your email collection endpoint
+            try {
+                // Option 1: Formspree
+                await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email: email, type: 'demo_waitlist' })
+                });
+                
+                button.innerHTML = '✓ You\'re on the list';
+                this.querySelector('input').value = '';
+            } catch (err) {
+                button.innerHTML = 'Try again';
+                button.disabled = false;
+            }
+            
+            setTimeout(() => {
+                button.innerHTML = originalText;
+                button.disabled = false;
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
