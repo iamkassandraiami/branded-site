@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Primary Meta Tags -->
-    <title>Branded. — Custom AI Agents Built for You</title>
-    <meta name="title" content="Branded. — Custom AI Agents Built for You">
-    <meta name="description" content="Private AI that runs locally on your machine. Custom-built for your business in 72 hours. Integrated with your tools. Owned forever.">
-    <meta name="keywords" content="custom AI agent, local AI, private AI, AI automation, business AI, AI assistant, secure AI, AI development">
+    <title>Branded. — Custom AI Agents, Built For You</title>
+    <meta name="title" content="Branded. — Custom AI Agents, Built For You">
+    <meta name="description" content="Your AI. Your Rules. Custom AI agents that run locally, learn from every interaction, and are delivered in 72 hours. Launch week: $5,000 (Regular $7,500).">
+    <meta name="keywords" content="custom AI agent, local AI, private AI, AI automation, business AI, AI assistant, secure AI">
     <meta name="author" content="Branded.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://brandedjustlikethat.com">
@@ -16,43 +16,37 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://brandedjustlikethat.com">
-    <meta property="og:title" content="Branded. — Custom AI Agents Built for You">
-    <meta property="og:description" content="Private AI that runs locally on your machine. Custom-built for your business in 72 hours. Owned forever.">
+    <meta property="og:title" content="Branded. — Custom AI Agents, Built For You">
+    <meta property="og:description" content="Your AI. Your Rules. Custom AI agents that run locally and learn from every interaction. Launch week: $5,000.">
     <meta property="og:image" content="https://brandedjustlikethat.com/og-image.png">
-    <meta property="og:site_name" content="Branded.">
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://brandedjustlikethat.com">
-    <meta name="twitter:title" content="Branded. — Custom AI Agents Built for You">
-    <meta name="twitter:description" content="Private AI that runs locally on your machine. Custom-built for your business in 72 hours. Owned forever.">
-    <meta name="twitter:image" content="https://brandedjustlikethat.com/og-image.png">
+    <meta name="twitter:title" content="Branded. — Custom AI Agents, Built For You">
+    <meta name="twitter:description" content="Your AI. Your Rules. Custom AI agents that run locally and learn from every interaction.">
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     
-    <!-- Schema.org Structured Data -->
+    <!-- Schema.org -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Product",
         "name": "Custom AI Agent",
-        "description": "Private AI agent custom-built for your business. Runs locally, integrates with your tools, owned forever.",
-        "brand": {
-            "@type": "Brand",
-            "name": "Branded."
-        },
+        "description": "Custom AI agent built for your business. Runs locally, learns from interactions, owned forever.",
+        "brand": { "@type": "Brand", "name": "Branded." },
         "offers": {
             "@type": "Offer",
             "price": "5000",
             "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock"
+            "availability": "https://schema.org/InStock",
+            "priceValidUntil": "2026-02-04"
         }
     }
     </script>
@@ -65,14 +59,16 @@
         }
         
         :root {
-            --obsidian: #0A0A0B;
-            --graphite: #18181B;
-            --slate: #27272A;
-            --smoke: #71717A;
-            --mist: #A1A1AA;
-            --pearl: #FAFAFA;
-            --amethyst: #8B5CF6;
-            --amethyst-dark: #7C3AED;
+            --black: #000000;
+            --dark: #0a0a0a;
+            --card: #111111;
+            --border: #222222;
+            --border-light: #333333;
+            --gray: #666666;
+            --gray-light: #999999;
+            --white: #ffffff;
+            --purple: #8B5CF6;
+            --purple-glow: rgba(139, 92, 246, 0.15);
         }
         
         html {
@@ -80,23 +76,19 @@
         }
         
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: var(--obsidian);
-            color: var(--pearl);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--black);
+            color: var(--white);
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
         }
         
-        /* Layout */
+        /* Utility */
         .container {
-            max-width: 1200px;
+            max-width: 1100px;
             margin: 0 auto;
             padding: 0 24px;
-        }
-        
-        section {
-            padding: 96px 0;
         }
         
         /* Navigation */
@@ -105,11 +97,11 @@
             top: 0;
             left: 0;
             right: 0;
-            z-index: 100;
-            padding: 20px 0;
-            background: rgba(10, 10, 11, 0.8);
+            z-index: 1000;
+            padding: 16px 0;
+            background: rgba(0, 0, 0, 0.8);
             backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(39, 39, 42, 0.5);
+            border-bottom: 1px solid var(--border);
         }
         
         nav .container {
@@ -119,27 +111,41 @@
         }
         
         .logo {
-            font-size: 24px;
-            font-weight: 900;
-            letter-spacing: -0.02em;
-            color: var(--pearl);
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--white);
             text-decoration: none;
+            letter-spacing: -0.02em;
+        }
+        
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+        
+        .nav-links a {
+            color: var(--gray-light);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--white);
         }
         
         .nav-cta {
-            background: var(--pearl);
-            color: var(--obsidian);
-            padding: 12px 24px;
-            border-radius: 8px;
-            font-weight: 600;
-            font-size: 14px;
-            text-decoration: none;
-            transition: all 200ms ease;
+            background: var(--white) !important;
+            color: var(--black) !important;
+            padding: 10px 20px !important;
+            border-radius: 6px;
+            font-weight: 600 !important;
         }
         
         .nav-cta:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(250, 250, 250, 0.2);
+            opacity: 0.9;
         }
         
         /* Hero */
@@ -147,9 +153,10 @@
             min-height: 100vh;
             display: flex;
             align-items: center;
-            padding-top: 80px;
+            justify-content: center;
+            text-align: center;
+            padding: 120px 24px 80px;
             position: relative;
-            overflow: hidden;
         }
         
         .hero::before {
@@ -158,9 +165,10 @@
             top: 0;
             left: 50%;
             transform: translateX(-50%);
-            width: 800px;
-            height: 800px;
-            background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, transparent 70%);
+            width: 100%;
+            max-width: 800px;
+            height: 600px;
+            background: radial-gradient(ellipse at center, var(--purple-glow) 0%, transparent 70%);
             pointer-events: none;
         }
         
@@ -170,43 +178,46 @@
             max-width: 800px;
         }
         
-        .hero-badge {
+        .launch-badge {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: var(--graphite);
-            border: 1px solid var(--slate);
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(139, 92, 246, 0.1));
+            border: 1px solid rgba(139, 92, 246, 0.3);
             padding: 8px 16px;
             border-radius: 100px;
-            font-size: 14px;
-            font-weight: 500;
-            color: var(--mist);
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--purple);
             margin-bottom: 32px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
         }
         
-        .hero-badge .dot {
-            width: 8px;
-            height: 8px;
-            background: #22C55E;
+        .launch-badge::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: var(--purple);
             border-radius: 50%;
             animation: pulse 2s infinite;
         }
         
         @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(0.8); }
         }
         
         h1 {
-            font-size: clamp(40px, 8vw, 72px);
-            font-weight: 900;
+            font-size: clamp(48px, 10vw, 80px);
+            font-weight: 800;
             line-height: 1.0;
-            letter-spacing: -0.03em;
+            letter-spacing: -0.04em;
             margin-bottom: 24px;
         }
         
-        h1 .highlight {
-            background: linear-gradient(135deg, var(--amethyst) 0%, #6366F1 100%);
+        h1 span {
+            background: linear-gradient(135deg, var(--purple), #a78bfa);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -214,32 +225,37 @@
         
         .hero-sub {
             font-size: clamp(18px, 2.5vw, 22px);
-            color: var(--mist);
-            max-width: 600px;
-            margin-bottom: 48px;
+            color: var(--gray-light);
+            max-width: 580px;
+            margin: 0 auto 40px;
             line-height: 1.5;
         }
         
         .hero-ctas {
             display: flex;
             gap: 16px;
+            justify-content: center;
             flex-wrap: wrap;
+            margin-bottom: 48px;
         }
         
-        .btn-primary {
+        .btn {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: linear-gradient(135deg, var(--amethyst) 0%, var(--amethyst-dark) 100%);
-            color: white;
-            padding: 18px 36px;
+            padding: 16px 32px;
             border-radius: 8px;
-            font-weight: 600;
             font-size: 16px;
+            font-weight: 600;
             text-decoration: none;
-            transition: all 200ms ease;
-            border: none;
+            transition: all 0.2s;
             cursor: pointer;
+            border: none;
+        }
+        
+        .btn-primary {
+            background: var(--purple);
+            color: var(--white);
         }
         
         .btn-primary:hover {
@@ -248,178 +264,231 @@
         }
         
         .btn-secondary {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
             background: transparent;
-            color: var(--pearl);
-            padding: 18px 36px;
-            border-radius: 8px;
-            font-weight: 600;
-            font-size: 16px;
-            text-decoration: none;
-            border: 1px solid var(--slate);
-            transition: all 200ms ease;
+            color: var(--white);
+            border: 1px solid var(--border-light);
         }
         
         .btn-secondary:hover {
-            background: var(--graphite);
-            border-color: var(--smoke);
+            background: var(--card);
+            border-color: var(--gray);
         }
         
-        /* Trust Bar */
-        .trust-bar {
-            padding: 48px 0;
-            border-top: 1px solid var(--slate);
-            border-bottom: 1px solid var(--slate);
+        .hero-price {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        
+        .price-regular {
+            font-size: 18px;
+            color: var(--gray);
+            text-decoration: line-through;
+        }
+        
+        .price-launch {
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--white);
+        }
+        
+        .price-save {
+            background: rgba(34, 197, 94, 0.15);
+            color: #22c55e;
+            padding: 6px 12px;
+            border-radius: 100px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        
+        /* Trust Strip */
+        .trust-strip {
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            padding: 32px 0;
+            background: var(--dark);
         }
         
         .trust-items {
             display: flex;
             justify-content: center;
-            gap: 48px;
+            gap: 40px;
             flex-wrap: wrap;
         }
         
         .trust-item {
             display: flex;
             align-items: center;
-            gap: 12px;
-            color: var(--smoke);
+            gap: 10px;
+            color: var(--gray-light);
             font-size: 14px;
             font-weight: 500;
         }
         
         .trust-item svg {
-            width: 20px;
-            height: 20px;
-            color: var(--amethyst);
+            width: 18px;
+            height: 18px;
+            color: var(--purple);
         }
         
-        /* Features */
-        .features {
-            background: var(--obsidian);
+        /* Section styling */
+        section {
+            padding: 100px 0;
         }
         
         .section-label {
-            font-size: 14px;
-            font-weight: 600;
-            color: var(--amethyst);
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--purple);
             text-transform: uppercase;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.15em;
             margin-bottom: 16px;
         }
         
         h2 {
             font-size: clamp(32px, 5vw, 48px);
-            font-weight: 700;
+            font-weight: 800;
             line-height: 1.1;
-            letter-spacing: -0.02em;
-            margin-bottom: 24px;
+            letter-spacing: -0.03em;
+            margin-bottom: 20px;
         }
         
         .section-intro {
             font-size: 18px;
-            color: var(--mist);
-            max-width: 600px;
-            margin-bottom: 64px;
+            color: var(--gray-light);
+            max-width: 560px;
+            margin-bottom: 56px;
+        }
+        
+        /* Features */
+        .features {
+            background: var(--black);
         }
         
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 24px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        
+        @media (max-width: 900px) {
+            .features-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        
+        @media (max-width: 600px) {
+            .features-grid { grid-template-columns: 1fr; }
         }
         
         .feature-card {
-            background: var(--graphite);
-            border: 1px solid var(--slate);
-            border-radius: 16px;
-            padding: 32px;
-            transition: all 300ms ease;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 28px;
+            transition: all 0.3s;
         }
         
         .feature-card:hover {
-            border-color: var(--amethyst);
+            border-color: var(--purple);
             transform: translateY(-4px);
         }
         
+        .feature-card.highlight {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(139, 92, 246, 0.05));
+            border-color: rgba(139, 92, 246, 0.3);
+        }
+        
         .feature-icon {
-            width: 48px;
-            height: 48px;
-            background: linear-gradient(135deg, rgba(139, 92, 246, 0.2) 0%, rgba(99, 102, 241, 0.2) 100%);
-            border-radius: 12px;
+            width: 44px;
+            height: 44px;
+            background: rgba(139, 92, 246, 0.15);
+            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }
         
         .feature-icon svg {
-            width: 24px;
-            height: 24px;
-            color: var(--amethyst);
+            width: 22px;
+            height: 22px;
+            color: var(--purple);
         }
         
         .feature-card h3 {
-            font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 12px;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
         }
         
         .feature-card p {
-            color: var(--mist);
-            font-size: 15px;
+            color: var(--gray-light);
+            font-size: 14px;
             line-height: 1.6;
         }
         
         /* How It Works */
         .how-it-works {
-            background: var(--graphite);
+            background: var(--dark);
         }
         
         .steps {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 32px;
-            margin-top: 64px;
+        }
+        
+        @media (max-width: 768px) {
+            .steps { grid-template-columns: 1fr; }
         }
         
         .step {
             position: relative;
+            padding-left: 24px;
+            border-left: 2px solid var(--border);
         }
         
-        .step-number {
-            font-size: 64px;
-            font-weight: 900;
-            color: var(--slate);
+        .step:hover {
+            border-left-color: var(--purple);
+        }
+        
+        .step-num {
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--border);
             line-height: 1;
             margin-bottom: 16px;
         }
         
+        .step:hover .step-num {
+            color: var(--purple);
+        }
+        
         .step h3 {
-            font-size: 24px;
-            font-weight: 600;
-            margin-bottom: 12px;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 8px;
         }
         
         .step p {
-            color: var(--mist);
-            font-size: 16px;
+            color: var(--gray-light);
+            font-size: 15px;
         }
         
         /* Pricing */
         .pricing {
+            background: var(--black);
             text-align: center;
         }
         
         .price-card {
-            max-width: 560px;
+            max-width: 480px;
             margin: 0 auto;
-            background: var(--graphite);
-            border: 1px solid var(--slate);
-            border-radius: 24px;
-            padding: 48px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 48px 40px;
             position: relative;
             overflow: hidden;
         }
@@ -430,20 +499,43 @@
             top: 0;
             left: 0;
             right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, var(--amethyst), #6366F1, #3B82F6);
+            height: 3px;
+            background: linear-gradient(90deg, var(--purple), #a78bfa, #6366f1);
         }
         
-        .price-amount {
-            font-size: 64px;
-            font-weight: 900;
-            letter-spacing: -0.03em;
+        .price-label {
+            display: inline-block;
+            background: var(--purple);
+            color: var(--white);
+            padding: 6px 14px;
+            border-radius: 100px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 24px;
+        }
+        
+        .price-display {
             margin-bottom: 8px;
         }
         
-        .price-term {
-            color: var(--smoke);
-            font-size: 16px;
+        .price-old {
+            font-size: 24px;
+            color: var(--gray);
+            text-decoration: line-through;
+            margin-right: 12px;
+        }
+        
+        .price-current {
+            font-size: 56px;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+        }
+        
+        .price-note {
+            color: var(--gray-light);
+            font-size: 14px;
             margin-bottom: 32px;
         }
         
@@ -456,8 +548,9 @@
             display: flex;
             align-items: flex-start;
             gap: 12px;
-            padding: 12px 0;
-            border-bottom: 1px solid var(--slate);
+            padding: 14px 0;
+            border-bottom: 1px solid var(--border);
+            font-size: 15px;
         }
         
         .price-feature:last-child {
@@ -465,151 +558,161 @@
         }
         
         .price-feature svg {
-            width: 20px;
-            height: 20px;
-            color: #22C55E;
+            width: 18px;
+            height: 18px;
+            color: #22c55e;
             flex-shrink: 0;
             margin-top: 2px;
-        }
-        
-        .price-feature span {
-            font-size: 15px;
-            color: var(--mist);
         }
         
         .price-cta {
             width: 100%;
             justify-content: center;
+            font-size: 17px;
+            padding: 18px 32px;
         }
         
-        .guarantee {
-            margin-top: 24px;
+        /* Referral */
+        .referral-banner {
+            margin-top: 32px;
+            padding: 20px 24px;
+            background: rgba(139, 92, 246, 0.1);
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            border-radius: 12px;
+            max-width: 480px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .referral-banner h4 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: var(--white);
+        }
+        
+        .referral-banner p {
             font-size: 14px;
-            color: var(--smoke);
+            color: var(--gray-light);
         }
         
-        /* Demo Section */
-        .demo-section {
-            background: linear-gradient(180deg, var(--obsidian) 0%, var(--graphite) 100%);
+        /* Waitlist */
+        .waitlist {
+            background: var(--dark);
             text-align: center;
         }
         
-        .demo-card {
-            max-width: 600px;
+        .waitlist-card {
+            max-width: 500px;
             margin: 0 auto;
-            background: var(--obsidian);
-            border: 1px solid var(--slate);
-            border-radius: 20px;
-            padding: 48px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 48px 40px;
         }
         
-        .demo-card h3 {
+        .waitlist-card h3 {
             font-size: 28px;
             font-weight: 700;
             margin-bottom: 12px;
         }
         
-        .demo-card p {
-            color: var(--mist);
-            margin-bottom: 32px;
+        .waitlist-card > p {
+            color: var(--gray-light);
+            margin-bottom: 28px;
         }
         
-        .demo-form {
+        .waitlist-form {
             display: flex;
             gap: 12px;
-            flex-wrap: wrap;
         }
         
-        .demo-form input {
+        .waitlist-form input {
             flex: 1;
-            min-width: 200px;
-            padding: 16px 20px;
-            background: var(--graphite);
-            border: 1px solid var(--slate);
+            padding: 14px 18px;
+            background: var(--dark);
+            border: 1px solid var(--border);
             border-radius: 8px;
-            color: var(--pearl);
-            font-size: 16px;
+            color: var(--white);
+            font-size: 15px;
             outline: none;
-            transition: border-color 200ms ease;
         }
         
-        .demo-form input::placeholder {
-            color: var(--smoke);
+        .waitlist-form input:focus {
+            border-color: var(--purple);
         }
         
-        .demo-form input:focus {
-            border-color: var(--amethyst);
+        .waitlist-form input::placeholder {
+            color: var(--gray);
         }
         
-        .demo-form button {
-            padding: 16px 32px;
+        .waitlist-form button {
             white-space: nowrap;
         }
         
-        .demo-note {
-            margin-top: 16px;
+        .waitlist-note {
+            margin-top: 14px;
             font-size: 13px;
-            color: var(--smoke);
+            color: var(--gray);
         }
         
         /* FAQ */
         .faq {
-            background: var(--obsidian);
+            background: var(--black);
         }
         
         .faq-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 24px;
-            margin-top: 64px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
         }
         
-        @media (max-width: 480px) {
-            .faq-grid {
-                grid-template-columns: 1fr;
-            }
+        @media (max-width: 700px) {
+            .faq-grid { grid-template-columns: 1fr; }
         }
         
         .faq-item {
-            padding: 24px;
-            background: var(--graphite);
-            border: 1px solid var(--slate);
+            background: var(--card);
+            border: 1px solid var(--border);
             border-radius: 12px;
+            padding: 24px;
         }
         
         .faq-item h4 {
             font-size: 16px;
             font-weight: 600;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
         
         .faq-item p {
-            color: var(--mist);
-            font-size: 15px;
+            color: var(--gray-light);
+            font-size: 14px;
             line-height: 1.6;
         }
         
         /* Final CTA */
         .final-cta {
+            background: linear-gradient(180deg, var(--dark), var(--black));
             text-align: center;
-            background: linear-gradient(180deg, var(--graphite) 0%, var(--obsidian) 100%);
-            padding: 120px 0;
+            padding: 120px 24px;
         }
         
         .final-cta h2 {
             margin-bottom: 16px;
         }
         
-        .final-cta p {
-            color: var(--mist);
+        .final-cta > p {
+            color: var(--gray-light);
             font-size: 18px;
-            margin-bottom: 40px;
+            max-width: 500px;
+            margin: 0 auto 36px;
         }
         
         /* Footer */
         footer {
-            padding: 48px 0;
-            border-top: 1px solid var(--slate);
+            border-top: 1px solid var(--border);
+            padding: 40px 0;
+            background: var(--black);
         }
         
         .footer-content {
@@ -617,108 +720,89 @@
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            gap: 24px;
+            gap: 20px;
         }
         
         .footer-links {
             display: flex;
-            gap: 32px;
+            gap: 28px;
         }
         
         .footer-links a {
-            color: var(--smoke);
+            color: var(--gray);
             text-decoration: none;
             font-size: 14px;
-            transition: color 200ms ease;
+            transition: color 0.2s;
         }
         
         .footer-links a:hover {
-            color: var(--pearl);
+            color: var(--white);
         }
         
         .footer-copy {
-            color: var(--smoke);
+            color: var(--gray);
             font-size: 14px;
         }
         
-        /* Responsive */
-        @media (max-width: 768px) {
-            section {
-                padding: 64px 0;
-            }
+        /* Mobile */
+        @media (max-width: 600px) {
+            .nav-links { display: none; }
             
-            .hero {
-                padding-top: 100px;
-            }
+            .hero { padding-top: 100px; }
             
-            .hero-ctas {
-                flex-direction: column;
-            }
+            .hero-ctas { flex-direction: column; }
             
-            .btn-primary, .btn-secondary {
-                width: 100%;
-                justify-content: center;
-            }
+            .btn { width: 100%; justify-content: center; }
             
-            .trust-items {
-                gap: 24px;
-            }
+            .hero-price { flex-direction: column; gap: 8px; }
             
-            .price-card {
-                padding: 32px 24px;
-            }
+            .trust-items { gap: 20px; }
             
-            .demo-form {
-                flex-direction: column;
-            }
+            .waitlist-form { flex-direction: column; }
             
-            .footer-content {
-                flex-direction: column;
+            .price-card { padding: 36px 24px; }
+            
+            .footer-content { 
+                flex-direction: column; 
                 text-align: center;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Nav -->
     <nav>
         <div class="container">
             <a href="/" class="logo">Branded.</a>
-            <a href="#pricing" class="nav-cta">Get Started</a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#how">How It Works</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#pricing" class="nav-cta">Get Started</a>
+            </div>
         </div>
     </nav>
     
     <!-- Hero -->
     <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <span class="dot"></span>
-                    Now accepting new clients
-                </div>
-                <h1>
-                    Your AI.<br>
-                    <span class="highlight">Your Rules.</span>
-                </h1>
-                <p class="hero-sub">
-                    Custom AI that runs on your machine. Built around your business. 
-                    Integrated with your tools. Delivered in 72 hours. Owned forever.
-                </p>
-                <div class="hero-ctas">
-                    <a href="#pricing" class="btn-primary">
-                        Get Your Agent
-                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    </a>
-                    <a href="#demo" class="btn-secondary">
-                        Join Waitlist for Demo
-                    </a>
-                </div>
+        <div class="hero-content">
+            <div class="launch-badge">Launch Week — $2,500 Off</div>
+            <h1>Your AI.<br><span>Your Rules.</span></h1>
+            <p class="hero-sub">Custom AI that runs locally, learns from every interaction, and is delivered in 72 hours. Built for you. Owned by you. Forever.</p>
+            <div class="hero-ctas">
+                <a href="#pricing" class="btn btn-primary">Get Your Agent →</a>
+                <a href="#waitlist" class="btn btn-secondary">Join Demo Waitlist</a>
+            </div>
+            <div class="hero-price">
+                <span class="price-regular">$7,500</span>
+                <span class="price-launch">$5,000</span>
+                <span class="price-save">Save $2,500</span>
             </div>
         </div>
     </section>
     
-    <!-- Trust Bar -->
-    <div class="trust-bar">
+    <!-- Trust -->
+    <div class="trust-strip">
         <div class="container">
             <div class="trust-items">
                 <div class="trust-item">
@@ -730,11 +814,11 @@
                     72-Hour Delivery
                 </div>
                 <div class="trust-item">
-                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-                    Your Data Never Leaves
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+                    Learns From You
                 </div>
                 <div class="trust-item">
-                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
                     Own Forever
                 </div>
             </div>
@@ -746,11 +830,17 @@
         <div class="container">
             <p class="section-label">What You Get</p>
             <h2>Intelligence that actually<br>knows your business</h2>
-            <p class="section-intro">
-                Not another generic chatbot. An AI built from the ground up around how you work.
-            </p>
+            <p class="section-intro">Not another generic chatbot. An AI built from the ground up around how you work — and gets smarter every time you use it.</p>
             
             <div class="features-grid">
+                <div class="feature-card highlight">
+                    <div class="feature-icon">
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+                    </div>
+                    <h3>Live Training</h3>
+                    <p>Rate any interaction 1-5 stars with one click. No explanations needed. Your agent learns instantly and refines itself into the perfect fit over time.</p>
+                </div>
+                
                 <div class="feature-card">
                     <div class="feature-icon">
                         <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
@@ -763,16 +853,16 @@
                     <div class="feature-icon">
                         <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/></svg>
                     </div>
-                    <h3>Persistent Memory</h3>
-                    <p>Remembers context across sessions. Learns your preferences. Gets better the more you use it.</p>
+                    <h3>Advanced Memory</h3>
+                    <p>File and asset system with persistent context. Remembers everything across sessions and gets better the more you use it.</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
                     </div>
-                    <h3>Your Business Logic</h3>
-                    <p>Embed your processes, frameworks, and decision trees. It thinks like you because we build it that way.</p>
+                    <h3>Cutting-Edge Reasoning</h3>
+                    <p>Customized thinking logic for your specific use type. Not generic — built to solve your problems the way you would.</p>
                 </div>
                 
                 <div class="feature-card">
@@ -780,7 +870,7 @@
                         <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"/></svg>
                     </div>
                     <h3>Your Data, Built In</h3>
-                    <p>Upload documents, databases, or connect your existing files. Your agent knows what you know.</p>
+                    <p>Upload your documents and files, or start fresh and add privately after install. Your choice, your pace.</p>
                 </div>
                 
                 <div class="feature-card">
@@ -788,15 +878,7 @@
                         <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
                     </div>
                     <h3>Tool Integration</h3>
-                    <p>Connect to your existing software, APIs, and platforms. Works with what you already use.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                    </div>
-                    <h3>One-Time Investment</h3>
-                    <p>No subscriptions. No per-seat pricing. No surprise fees. Pay once, own forever.</p>
+                    <p>Connect your existing tools, APIs, and accounts. Works seamlessly with what you already use.</p>
                 </div>
             </div>
         </div>
@@ -807,24 +889,25 @@
         <div class="container">
             <p class="section-label">How It Works</p>
             <h2>From order to ownership<br>in 72 hours</h2>
+            <p class="section-intro">Two paths to choose from. Easy setup where we handle everything, or hands-on for those who want to code and tweak on their terms.</p>
             
             <div class="steps">
                 <div class="step">
-                    <div class="step-number">01</div>
+                    <div class="step-num">01</div>
                     <h3>Tell Us About You</h3>
-                    <p>Share your business, workflow, and what you need. Upload any relevant files or data you want built in.</p>
+                    <p>Share your business, workflow, and what you need. Upload any files you want built in, or leave it general to start.</p>
                 </div>
                 
                 <div class="step">
-                    <div class="step-number">02</div>
+                    <div class="step-num">02</div>
                     <h3>We Build It</h3>
-                    <p>Our team crafts your custom agent with your logic, voice, and integrations. Ready in 72 hours.</p>
+                    <p>Your specifications, personality features, and characteristics are added. Then integrations, tools, APIs, and finishing touches.</p>
                 </div>
                 
                 <div class="step">
-                    <div class="step-number">03</div>
+                    <div class="step-num">03</div>
                     <h3>You Own It</h3>
-                    <p>Receive your agent with full setup. Runs locally on your machine. Two refinement rounds included.</p>
+                    <p>Wrapped up and delivered. Easy install, then refine privately over time with live training. Two refinement rounds included.</p>
                 </div>
             </div>
         </div>
@@ -837,8 +920,12 @@
             <h2>One agent. One price. Forever.</h2>
             
             <div class="price-card">
-                <div class="price-amount">$5,000</div>
-                <div class="price-term">One-time investment · No subscriptions</div>
+                <div class="price-label">🚀 Launch Week</div>
+                <div class="price-display">
+                    <span class="price-old">$7,500</span>
+                    <span class="price-current">$5,000</span>
+                </div>
+                <p class="price-note">One-time investment · No subscriptions · Save $2,500 this week only</p>
                 
                 <div class="price-features">
                     <div class="price-feature">
@@ -847,23 +934,23 @@
                     </div>
                     <div class="price-feature">
                         <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
-                        <span>Runs 100% locally — your data stays private</span>
+                        <span>Live training — learns from 1-5 star ratings, gets smarter over time</span>
                     </div>
                     <div class="price-feature">
                         <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
-                        <span>Persistent memory & your business logic built in</span>
+                        <span>Runs 100% locally — your data stays completely private</span>
                     </div>
                     <div class="price-feature">
                         <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
-                        <span>Integration with your existing tools & platforms</span>
+                        <span>Advanced memory, cutting-edge reasoning, your personality built in</span>
                     </div>
                     <div class="price-feature">
                         <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
-                        <span>72-hour delivery with complete setup</span>
+                        <span>Integration with your existing tools, APIs & platforms</span>
                     </div>
                     <div class="price-feature">
                         <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
-                        <span>Two refinement rounds included</span>
+                        <span>72-hour delivery with complete setup + 2 refinement rounds</span>
                     </div>
                     <div class="price-feature">
                         <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
@@ -871,29 +958,27 @@
                     </div>
                 </div>
                 
-                <a href="#checkout" class="btn-primary price-cta" id="checkout-btn">
-                    Get Started Now
-                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-                
-                <p class="guarantee">Questions? Contact hello@brandedjustlikethat.com</p>
+                <a href="#checkout" class="btn btn-primary price-cta" id="checkout-btn">Get Started Now →</a>
+            </div>
+            
+            <div class="referral-banner">
+                <h4>Know someone who needs this?</h4>
+                <p>Refer a friend → Get $250 off your own agent</p>
             </div>
         </div>
     </section>
     
-    <!-- Demo Waitlist -->
-    <section class="demo-section" id="demo">
+    <!-- Waitlist -->
+    <section class="waitlist" id="waitlist">
         <div class="container">
-            <div class="demo-card">
+            <div class="waitlist-card">
                 <h3>See It In Action</h3>
                 <p>Join the waitlist for a personalized demo of what your custom agent could do.</p>
-                
-                <form class="demo-form" id="waitlist-form">
+                <form class="waitlist-form" id="waitlist-form">
                     <input type="email" placeholder="Enter your email" required>
-                    <button type="submit" class="btn-primary">Join Waitlist</button>
+                    <button type="submit" class="btn btn-primary">Join Waitlist</button>
                 </form>
-                
-                <p class="demo-note">No spam. We'll reach out when demo slots open.</p>
+                <p class="waitlist-note">No spam. We'll reach out when demo slots open.</p>
             </div>
         </div>
     </section>
@@ -905,6 +990,16 @@
             <h2>Everything you need to know</h2>
             
             <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>How does the live training work?</h4>
+                    <p>After any interaction, just click a 1-5 star rating. That's it. No explanations needed. Your agent learns from every rating and adjusts its behavior to become the perfect fit over time.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Can I tweak it myself?</h4>
+                    <p>Yes! Choose the hands-on option if you want to code and customize on your terms. You'll have full access to modify anything. Note: hands-on option is no refunds.</p>
+                </div>
+                
                 <div class="faq-item">
                     <h4>How private is it really?</h4>
                     <p>Completely. Your agent runs on your local machine. No data is sent to external servers. We can't access it even if we wanted to.</p>
@@ -921,17 +1016,7 @@
                 </div>
                 
                 <div class="faq-item">
-                    <h4>Can I use it for my business?</h4>
-                    <p>Absolutely. It's yours. Use it however you want — internally, with clients, for products. No restrictions.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h4>What integrations are possible?</h4>
-                    <p>Most tools with APIs — Notion, Slack, email, CRMs, databases, and more. Tell us what you use and we'll make it work.</p>
-                </div>
-                
-                <div class="faq-item">
-                    <h4>Why $5,000?</h4>
+                    <h4>Why $7,500 (normally)?</h4>
                     <p>You're getting custom development that agencies charge $50K+ for, delivered in 72 hours. And you own it forever instead of renting it monthly.</p>
                 </div>
             </div>
@@ -943,10 +1028,7 @@
         <div class="container">
             <h2>Ready to own your AI?</h2>
             <p>Stop renting. Start owning. 72 hours from now, you could have an AI that actually knows your business.</p>
-            <a href="#pricing" class="btn-primary">
-                Get Your Agent
-                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
+            <a href="#pricing" class="btn btn-primary">Get Your Agent →</a>
         </div>
     </section>
     
@@ -956,8 +1038,8 @@
             <div class="footer-content">
                 <a href="/" class="logo">Branded.</a>
                 <div class="footer-links">
-                    <a href="/terms">Terms</a>
-                    <a href="/privacy">Privacy</a>
+                    <a href="/terms.html">Terms</a>
+                    <a href="/privacy.html">Privacy</a>
                     <a href="mailto:hello@brandedjustlikethat.com">Contact</a>
                 </div>
                 <p class="footer-copy">© 2026 Branded. All rights reserved.</p>
@@ -965,16 +1047,12 @@
         </div>
     </footer>
     
-    <!-- Stripe Integration Script -->
     <script>
-        // Checkout button - redirect to Stripe
         document.getElementById('checkout-btn').addEventListener('click', function(e) {
             e.preventDefault();
-            // Replace with your Stripe Payment Link
             window.location.href = 'https://buy.stripe.com/test_9B65kC79c4OFeQcaYo7kc00';
         });
         
-        // Waitlist form
         document.getElementById('waitlist-form').addEventListener('submit', async function(e) {
             e.preventDefault();
             const email = this.querySelector('input').value;
@@ -984,9 +1062,7 @@
             button.innerHTML = 'Joining...';
             button.disabled = true;
             
-            // Send to your email collection endpoint
             try {
-                // Option 1: Formspree
                 await fetch('https://formspree.io/f/YOUR_FORM_ID', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
@@ -997,7 +1073,6 @@
                 this.querySelector('input').value = '';
             } catch (err) {
                 button.innerHTML = 'Try again';
-                button.disabled = false;
             }
             
             setTimeout(() => {
